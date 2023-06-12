@@ -9,9 +9,11 @@ import numpy as np
 
 #Utils 
 import joblib
+from pathlib import Path
 
 #Loading the pipeline
-pipe_lr = joblib.load(open("emotion_classifier_pipe_lr_28_may_2023.pkl","rb"))
+filePath = Path(__file__).parent / "./emotion_classifier_pipe_lr_28_may_2023.pkl"
+pipe_lr = joblib.load(open(filePath,"rb"))
 
 #Fxn to read the emotion
 def predict_emotion(docx):
