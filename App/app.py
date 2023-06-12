@@ -11,7 +11,7 @@ import numpy as np
 import joblib
 
 #Loading the pipeline
-pipe_lr = joblib.load(open("D:/Shawn_Frost/Desktop/Project/nlp_project/App/models/emotion_classifier_pipe_lr_28_may_2023.pkl","rb"))
+pipe_lr = joblib.load(open("./emotion_classifier_pipe_lr_28_may_2023.pkl","rb"))
 
 #Fxn to read the emotion
 def predict_emotion(docx):
