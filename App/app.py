@@ -12,7 +12,7 @@ import joblib
 from pathlib import Path
 
 #Loading the pipeline
-filePath = Path(__file__).parent / "./emotion_classifier_pipe_lr_28_may_2023.pkl"
+filePath = Path(__file__).parent / "./emotion_classifier_pipe_lr_19_june_2023.pkl"
 pipe_lr = joblib.load(open(filePath,"rb"))
 
 #Fxn to read the emotion
@@ -25,7 +25,7 @@ def get_prediction_proba(docx):
     return results
 
 
-emotions_emoji_dict = {"anger":"😠","disgust":"🤮", "fear":"😨😱", "happy":"🤗", "joy":"😂", "neutral":"😐", "sad":"😔", "sadness":"😔", "shame":"😳", "surprise":"😮"}
+emotions_emoji_dict = {"anger":"😠","fear":"😨😱", "joy":"🤗", "love":"😂", "sadness":"😔", "surprise":"😮"}
 
 
 def main():
