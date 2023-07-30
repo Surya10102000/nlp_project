@@ -25,7 +25,7 @@ def get_prediction_proba(docx):
     return results
 
 
-emotions_emoji_dict = {"anger":"😠","fear":"😨😱", "joy":"🤗", "love":"😂", "sadness":"😔", "surprise":"😮"}
+emotions_emoji_dict = {"anger":"😠","fear":"😨😱", "joy":"🤗", "love":"🥰", "sadness":"😔", "surprise":"😮"}
 
 
 def main():
